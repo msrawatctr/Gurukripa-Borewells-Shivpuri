@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>गुरु कृपा बोरवेल्स | शिवपुरी</title>
+<style>
+:root{--navy:#102b49;--orange:#f28c18;--cream:#fff8ed}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:#172638;background:#fff}
+header{background:var(--navy);color:white;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-size:22px;font-weight:800}.tag{color:#ffd18b;font-size:13px}
+.hero{padding:64px 7%;background:linear-gradient(120deg,#102b49ee,#173f60dd),linear-gradient(45deg,#e8a04a,#fff);color:#fff}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:0 0 12px}.hero p{font-size:18px;max-width:650px;line-height:1.7}
+.btn{display:inline-block;background:var(--orange);color:#111;text-decoration:none;font-weight:bold;padding:13px 20px;border-radius:8px;margin:8px 8px 0 0}
+.btn.alt{background:#fff;color:var(--navy)}
+section{padding:42px 7%}h2{color:var(--navy);font-size:28px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--cream);padding:20px;border-radius:12px;border:1px solid #f0dfc8}.card h3{margin-top:0;color:var(--navy)}
+form{display:grid;gap:12px;max-width:650px}input,select,textarea{width:100%;padding:13px;border:1px solid #cbd3dc;border-radius:7px;font:inherit}
+button{border:0;cursor:pointer}.note{font-size:13px;color:#586575;line-height:1.6}
+footer{background:var(--navy);color:white;padding:28px 7%;line-height:1.8}
+</style></head>
+<body>
+<header><div><div class="brand">गुरु कृपा बोरवेल्स</div><div class="tag">GURU KRIPA BOREWELLS · शिवपुरी, मध्य प्रदेश</div></div><a class="btn" href="tel:7999363845">कॉल करें</a></header>
+<div class="hero">
+<h1>बोरवेल ड्रिलिंग सेवा</h1>
+<p><b>लक्की रावत — रामखेड़ी वाले</b><br>अपनी 5 मशीनों के साथ 24 घंटे बुकिंग सुविधा। शिवपुरी और आसपास के क्षेत्रों में सेवा।</p>
+<a class="btn" href="#booking">बुकिंग करें</a><a class="btn alt" href="https://wa.me/917999363845" target="_blank">WhatsApp करें</a>
+</div>
+<section><h2>हमारी सेवाएँ</h2><div class="grid">
+<div class="card"><h3>बोरवेल ड्रिलिंग</h3><p>किसान और घरेलू जरूरतों के लिए बोरवेल ड्रिलिंग सेवा।</p></div>
+<div class="card"><h3>5 अपनी मशीनें</h3><p>हमारे पास पाँचों मशीनें स्वयं की हैं। मशीनों की वास्तविक तस्वीरें बाद में जोड़ी जा सकती हैं।</p></div>
+<div class="card"><h3>24 घंटे उपलब्धता</h3><p>ग्राहक अपनी पसंद की तारीख और समय के लिए बुकिंग विवरण भेज सकते हैं।</p></div>
+</div></section>
+<section><h2>सेवा क्षेत्र</h2><div class="card"><p>शिवपुरी (सभी तहसीलें), कोलारस, कैलारस और ग्वालियर। उपलब्धता की पुष्टि फोन पर करें।</p></div></section>
+<section id="booking"><h2>बुकिंग फॉर्म</h2><p>फॉर्म भरकर WhatsApp पर बुकिंग विवरण भेजें। यह शुरुआती वेबसाइट डेमो है; अभी ऑनलाइन डेटाबेस/ऑटो-कन्फर्म बुकिंग चालू नहीं है।</p>
+<form id="bookingForm">
+<input name="name" placeholder="आपका नाम" required>
+<input name="phone" placeholder="मोबाइल नंबर" inputmode="tel" required>
+<input name="village" placeholder="गाँव / स्थान" required>
+<input name="date" type="date" required>
+<input name="time" type="time" required>
+<textarea name="location" placeholder="पूरा पता / लोकेशन" rows="3"></textarea>
+<button class="btn" type="submit">WhatsApp पर बुकिंग भेजें</button>
+</form><p class="note">नोट: बुकिंग भेजने के बाद 7999363845 पर बात करके मशीन और समय की उपलब्धता पक्की करें।</p>
+</section>
+<section><h2>संपर्क करें</h2><div class="grid">
+<div class="card"><h3>लक्की रावत</h3><p>रामखेड़ी वाले</p><p><a href="tel:7999363845">7999363845</a><br><a href="tel:9977405825">9977405825</a></p></div>
+<div class="card"><h3>पता</h3><p>गुरु कृपा होटल, झिरी रोड, रामखेड़ी, शिवपुरी, मध्य प्रदेश – 473551</p></div>
+</div></section>
+<footer>© गुरु कृपा बोरवेल्स · लक्की रावत, रामखेड़ी वाले<br>शिवपुरी, मध्य प्रदेश · 24 घंटे बुकिंग पूछताछ</footer>
+<script>
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+ e.preventDefault();const d=new FormData(this);
+ const msg=`नयी बोरवेल बुकिंग पूछताछ:%0Aनाम: ${encodeURIComponent(d.get('name'))}%0Aमोबाइल: ${encodeURIComponent(d.get('phone'))}%0Aगाँव: ${encodeURIComponent(d.get('village'))}%0Aतारीख: ${encodeURIComponent(d.get('date'))}%0Aसमय: ${encodeURIComponent(d.get('time'))}%0Aलोकेशन: ${encodeURIComponent(d.get('location')||'नहीं दी')}`;
+ window.open('https://wa.me/917999363845?text='+msg,'_blank');
+});
+</script></body></html>
