@@ -36,6 +36,66 @@ footer{background:#041725;color:#c7d5df;padding:38px 0 25px}footer .foot{display
 
 
 .textlink{border:0;background:none;padding:0;color:#12618b;text-decoration:underline;font:700 12px inherit;cursor:pointer}.reportgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.reportcard{padding:16px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#fff,#f4f8fa)}.reportcard small{display:block;color:var(--muted);font-size:12px}.reportcard b{display:block;color:var(--navy);font:800 24px "DM Sans";margin-top:5px}.monthpick{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}.monthpick label{font-weight:800;font-size:13px}.monthpick input{max-width:190px}.searchpanel{background:#f3f7f9;border:1px solid var(--line);padding:15px;border-radius:12px;margin:14px 0}.searchgrid{display:grid;grid-template-columns:1fr 190px auto;gap:9px;margin:10px 0}.payment-box{min-width:205px}.payment-box input{margin-bottom:2px}.booking-no{font-weight:900;color:#0b5c87;white-space:nowrap}.send-confirm{display:inline-block;border:0;border-radius:7px;background:#16804c;color:#fff;padding:8px 10px;margin-top:8px;font-weight:800;cursor:pointer}.adminform button:disabled,.send-confirm:disabled{opacity:.6;cursor:wait}
+
+/* Official admin dashboard refresh */
+#adminModal{background:rgba(3,15,27,.88);backdrop-filter:blur(7px);padding:18px}
+#adminModal .modalbox{width:min(1240px,100%);margin:14px auto;padding:0;overflow:hidden;border:1px solid #dce5eb;border-radius:20px;box-shadow:0 30px 100px #0008}
+#adminModal .modalhead{padding:19px 24px;background:linear-gradient(115deg,#061b2d,#12496c);color:#fff;border:0}
+#adminModal .modalhead h2{color:#fff;font-size:19px;letter-spacing:.1px}
+#adminModal .modalhead .close{background:#ffffff1c;color:#fff;border:1px solid #ffffff35;font-weight:800}
+#loginView{max-width:520px!important;margin:30px auto 38px;padding:0 24px}
+#loginView:before{content:"GURU KRIPA BOREWELLS  /  SECURE ADMIN PORTAL";display:block;color:#b47a1e;font:900 10px "DM Sans";letter-spacing:1.5px;margin:0 0 12px}
+#loginView .alert{background:#f2f7fa;border:1px solid #dce8ef;color:#36536a;line-height:1.7}
+#loginView .adminform{padding:22px;border:1px solid #e1e9ee;border-radius:16px;background:linear-gradient(145deg,#fff,#f7fafc);box-shadow:0 12px 35px #071c2d0c}
+#loginView .adminform .btn{width:100%;min-height:48px}
+#loginView input{min-height:46px}
+#dashboardView{padding:0 24px 28px;background:#f5f8fa}
+#dashboardView .adminbar{margin:0 -24px 20px;padding:19px 24px;background:#fff;border-bottom:1px solid #e4ebf0;display:flex;align-items:center}
+#dashboardView .adminbar>div b{display:block;font-size:22px;color:#09243a}
+#dashboardView .adminbar .hint{margin-top:3px}
+#dashboardView .adminbar button{min-height:40px}
+#dashboardView .reportgrid{gap:14px;margin:18px 0}
+#dashboardView .reportcard{position:relative;overflow:hidden;min-height:108px;padding:18px 19px;border:1px solid #e0e8ed;border-radius:15px;background:#fff;box-shadow:0 6px 20px #071c2d08}
+#dashboardView .reportcard:after{content:"";position:absolute;right:-18px;top:-22px;width:82px;height:82px;border-radius:50%;background:#e9f1f6}
+#dashboardView .reportcard small{position:relative;z-index:1;font-weight:800;color:#607486}
+#dashboardView .reportcard b{position:relative;z-index:1;font-size:26px;color:#0c3049}
+#dashboardView .monthpick{background:#fff;border:1px solid #e1e9ee;border-radius:12px;padding:12px 15px}
+#dashboardView .monthpick label{color:#23445b}
+#dashboardView #adminMsg{padding:9px 12px;border-radius:8px;background:#eaf3f8;color:#34556c;margin:12px 0}
+#dashboardView .searchpanel{background:#fff;border:1px solid #dfe8ee;border-radius:14px;padding:17px;margin:16px 0;box-shadow:0 5px 16px #071c2d07}
+#dashboardView .searchpanel>b{font-size:15px;color:#0c3049}
+#dashboardView .searchgrid{grid-template-columns:minmax(180px,1fr) 190px auto}
+#dashboardView .tablewrap{background:#fff;border:1px solid #dfe8ee;border-radius:14px;box-shadow:0 6px 20px #071c2d08;overflow:auto}
+#dashboardView table{min-width:900px}
+#dashboardView th{position:sticky;top:0;background:#eaf1f5;color:#15364d;font-size:12px;text-transform:none;padding:13px}
+#dashboardView td{padding:13px 11px;color:#334c5f}
+#dashboardView tbody tr:hover{background:#f8fbfd}
+#dashboardView .booking-no{display:inline-block;background:#eaf4fa;padding:4px 7px;border-radius:6px}
+#dashboardView .status{min-width:130px;background:#fff}
+#dashboardView .payment-box{padding:10px;background:#f7fafb;border:1px solid #e6edf1;border-radius:10px}
+#dashboardView .save-payment{min-height:35px}
+#dashboardView .send-confirm{font-size:11px}
+#dashboardView .hint,#dashboardView .rowmsg{line-height:1.55}
+@media(max-width:760px){
+ #adminModal{padding:7px}
+ #adminModal .modalbox{margin:4px auto;border-radius:14px}
+ #adminModal .modalhead{padding:14px 15px}
+ #adminModal .modalhead h2{font-size:15px}
+ #dashboardView{padding:0 12px 18px}
+ #dashboardView .adminbar{margin:0 -12px 14px;padding:14px 12px;gap:8px}
+ #dashboardView .adminbar>div{width:100%}
+ #dashboardView .adminbar>div b{font-size:19px}
+ #dashboardView .adminbar button{flex:1;padding:10px 8px;font-size:12px}
+ #dashboardView .reportgrid{gap:9px}
+ #dashboardView .reportcard{min-height:94px;padding:13px}
+ #dashboardView .reportcard b{font-size:20px}
+ #dashboardView .searchpanel{padding:12px}
+ #dashboardView .searchgrid{grid-template-columns:1fr}
+ #dashboardView .monthpick{align-items:stretch}
+ #dashboardView .monthpick input{max-width:none;flex:1}
+ #loginView{margin:22px auto 28px;padding:0 14px}
+}
+
 @media(max-width:760px){.reportgrid{grid-template-columns:repeat(2,1fr)}.searchgrid{grid-template-columns:1fr}.reportcard b{font-size:21px}}
 
 </style>
@@ -73,14 +133,14 @@ footer{background:#041725;color:#c7d5df;padding:38px 0 25px}footer .foot{display
 </main>
 <footer><div class="wrap foot"><div><strong>गुरु कृपा बोरवेल्स</strong><br>लक्की रावत (रामखेड़ी वाले) · संचालक<br>35 वर्षों का अनुभव · 5 मशीनें<br>गुरु कृपा होटल, झिरी रोड, रामखेड़ी, शिवपुरी, मध्य प्रदेश – 473551<br>फोन: 7999363845 · 9977405825<br>© <span id="year"></span> सर्वाधिकार सुरक्षित<br><a class="adminlink" href="#" id="adminOpen">Admin Login</a></div><div class="footlinks"><a href="#home">होम</a><a href="#services">सेवाएँ</a><a href="#booking">बुकिंग</a><a href="#gallery">गैलरी</a></div></div></footer>
 <div class="mobilebar"><a class="call" href="tel:7999363845">📞 कॉल करें</a><a class="wa" href="https://wa.me/917999363845" target="_blank">WhatsApp</a></div>
-<div class="modal" id="adminModal"><div class="modalbox"><div class="modalhead"><h2>🔐 गुरु कृपा बोरवेल्स · Admin</h2><button class="close" id="adminClose">बंद करें ✕</button></div>
+<div class="modal" id="adminModal"><div class="modalbox"><div class="modalhead"><h2>🔐 गुरु कृपा बोरवेल्स <span style="font-size:12px;font-weight:600;color:#ffdc91">· सुरक्षित एडमिन पोर्टल</span></h2><button class="close" id="adminClose">बंद करें ✕</button></div>
 <div id="loginView" class="loginbox"><div class="alert">केवल अधिकृत एडमिन ईमेल और पासवर्ड से लॉगिन करें।</div>
 <form class="adminform" id="loginForm"><div class="field"><label for="adminEmail">Admin Email</label><input id="adminEmail" type="email" required placeholder="admin@example.com"></div><div class="field"><label for="adminPassword">Password</label><input id="adminPassword" type="password" required placeholder="पासवर्ड"></div><button class="btn gold" type="submit">सुरक्षित लॉगिन</button><div id="loginMsg" class="hint"></div></form>
 <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:13px"><button type="button" class="textlink" id="forgotPasswordBtn">पासवर्ड भूल गए?</button><a class="textlink" href="tel:7999363845">ईमेल भूल गए? एडमिन सहायता: 7999363845</a></div>
 <div id="forgotPasswordBox" style="display:none;margin-top:16px;padding:15px;border:1px solid var(--line);border-radius:12px"><b>पासवर्ड रीसेट</b><p class="hint">रजिस्टर्ड एडमिन ईमेल डालें। उस ईमेल पर पासवर्ड बदलने का लिंक भेजा जाएगा।</p><div class="field"><input id="resetEmail" type="email" placeholder="रजिस्टर्ड Admin Email"></div><button class="btn" style="background:#0d304b;color:white;margin-top:9px" id="sendResetBtn" type="button">रीसेट लिंक भेजें</button><div id="resetMsg" class="hint"></div></div>
 <div id="newPasswordBox" style="display:none;margin-top:16px;padding:15px;border:1px solid var(--line);border-radius:12px"><b>नया पासवर्ड सेट करें</b><div class="field" style="margin-top:9px"><input id="newPassword" type="password" minlength="8" placeholder="नया पासवर्ड (कम-से-कम 8 अक्षर)"></div><button class="btn gold" id="saveNewPasswordBtn" type="button">नया पासवर्ड सेव करें</button><div id="newPasswordMsg" class="hint"></div></div>
 </div>
-<div id="dashboardView" style="display:none"><div class="adminbar"><div><b>एडमिन डैशबोर्ड</b><div class="hint">बुकिंग, भुगतान और मासिक रिपोर्ट</div></div><button class="btn" style="background:#edf2f5;color:var(--navy)" id="refreshBtn">↻ Refresh</button><button class="btn" style="background:#071c2d;color:white" id="logoutBtn">Logout</button></div>
+<div id="dashboardView" style="display:none"><div class="adminbar"><div><b>एडमिन डैशबोर्ड</b><div class="hint">कंट्रोल पैनल&nbsp; · &nbsp;बुकिंग, भुगतान और मासिक रिपोर्ट</div></div><button class="btn" style="background:#edf2f5;color:var(--navy)" id="refreshBtn">↻ Refresh</button><button class="btn" style="background:#071c2d;color:white" id="logoutBtn">Logout</button></div>
 <div class="reportgrid"><div class="reportcard"><small>कुल बुकिंग</small><b id="allBookingCount">0</b></div><div class="reportcard"><small>चुने महीने की बुकिंग</small><b id="monthBookingCount">0</b></div><div class="reportcard"><small>इस महीने प्राप्त रकम</small><b id="monthRevenue">₹0</b></div><div class="reportcard"><small>इस महीने बुकिंग की कुल कीमत</small><b id="monthBookingValue">₹0</b></div></div>
 <div class="monthpick"><label for="reportMonth">महीने की रिपोर्ट:</label><input id="reportMonth" type="month"></div>
 <div id="adminMsg" class="hint"></div>
