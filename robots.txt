@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gurukripaborewellsshipuri.pages.dev/sitemap.xml
+Sitemap: https://msrawatctr.github.io/Gurukripa-Borewells-Shivpuri/sitemap.xml
