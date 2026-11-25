@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gurukripa-borewells-shivpuri.pages.dev/sitemap.xml
+Sitemap: https://gurukripaborewellsshipuri.pages.dev/sitemap.xml
